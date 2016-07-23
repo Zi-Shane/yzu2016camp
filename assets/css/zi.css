@@ -28,17 +28,21 @@ body {
 .navitem {
     display: inline-block;
     height: 90px;
-    width: 70px;
+    width: 75px;
+    padding-top: 5px;
     text-align: center;
     line-height: 90px;
     color: #bbc3cf;
 }
 .navbutton {
     display: inline;
-    text-align: center;
-    width: 170px;
+    padding-left: 20px;
+    width: 180px;
     height: 90px;
     background-color: #1a8af3;
+}
+.navbottonicon {
+    padding: 30px 20px 0 0;
 }
 .navitem:hover {
     -webkit-transition-duration: 0.1s;
