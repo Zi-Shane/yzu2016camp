@@ -1,0 +1,38 @@
+body {
+  background-color: rgba(255,255,255,0.95);
+  height: 200vh;
+}
+
+.mainnav {
+  display: inline;
+  position: fixed;
+  height: 90px;
+  background-color: rgba(0,28,49,0.9);
+}
+
+.navitem {
+  display: inline-block;
+  height: 90px;
+  width: 70px;
+  text-align: center;
+  line-height: 90px;
+  color: #bbc3cf;
+}
+
+.navitem:hover {
+  -webkit-transition-duration: 0.1s; /* Safari */
+  transition-duration: 0.1s;
+  color: #596474;
+}
+
+.navbutton {
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+  height: 90px;
+  background-color: #1a8af3;
+}
+
+.navrightmargin {
+  margin-right: 15%;
+}
