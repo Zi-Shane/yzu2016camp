@@ -1,20 +1,21 @@
-body {
-    background-color: rgba(255, 255, 255, 0.95);
-    height: 200vh;
+#aftermain {
+    background: #1a8af3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient( top, #1a8af3, rgba(0, 28, 49, 1));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient( top, #1a8af3, rgba(0, 28, 49, 1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* main */
 
 .mainnav {
-    list-style-type: none;
-    margin: 0;
+    display: block;
+    margin-top: 0;
     padding: 0;
     position: fixed;
     height: 90px;
-    background-color: rgba(0, 28, 49, 0.9);
-}
-.mainmargin {
-    padding: 0 15% 0 15%;
+    background-color: rgba(255, 255, 255, 0.95);
 }
 .leftmargin {
     float: left;
@@ -22,31 +23,85 @@ body {
 .rightmargin {
     float: right;
 }
+//透明
+.transparent {
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+}
 
 /* nav */
 
 .navitem {
-    display: inline-block;
+    display: block;
     height: 90px;
-    width: 75px;
     padding-top: 5px;
-    text-align: center;
+    padding-right: 20px;
     line-height: 90px;
     color: #bbc3cf;
 }
-.navbutton {
-    display: inline;
-    padding-left: 20px;
-    width: 180px;
+.navrightitem {
+    display: block;
+    background-color: #0b76da;
+    color: rgba(255, 255, 255, 0.9);
+    padding-left: 10px;
+    width: 190px;
     height: 90px;
-    background-color: #1a8af3;
 }
-.navbottonicon {
+.navbottonsearch {
     padding: 30px 20px 0 0;
+}
+.navbottontrend {
+    padding: 30px 40px 0 0;
 }
 .navitem:hover {
     -webkit-transition-duration: 0.1s;
     /* Safari */
     transition-duration: 0.1s;
     color: #596474;
+}
+#navsignup {
+    padding-left: 0px;
+    width: 150px;
+}
+
+/* landing */
+
+#landing {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 90vh;
+}
+.section1-content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100vw;
+}
+
+/* about */
+
+#about {
+    height: 120vh;
+}
+
+/* schedule */
+
+#schedule {
+    height: 120vh;
+}
+
+/* notice */
+
+#notice {
+    height: 120vh;
+}
+
+/* signup */
+
+#signup {
+    height: 80vh;
 }
