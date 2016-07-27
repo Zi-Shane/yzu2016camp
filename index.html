@@ -50,42 +50,103 @@
 
 <body>
     <!-- navigation -->
-    <nav class="transparent mainnav z-depth-0">
+    <nav class="mainnav z-depth-0 transparent">
         <div class="container">
             <div>
                 <a data-scroll-nav="0" class="navitem leftmargin">首頁</a>
                 <a data-scroll-nav="1" class="navitem leftmargin">關於我們</a>
                 <a data-scroll-nav="2" class="navitem leftmargin">行程表</a>
                 <a data-scroll-nav="3" class="navitem leftmargin">注意事項</a>
+                <a data-scroll-nav="4" class="navitem leftmargin">我要報名</a>
             </div>
             <div>
                 <a class="navrightitem rightmargin" id="navsignup" href="#">馬上報名<i class="large material-icons navbottontrend rightmargin">trending_flat</i></a>
-                <a class="navrightitem rightmargin" id="navcheck">繳費登記與查詢<i class="large material-icons navbottonsearch rightmargin">search</i></a>
+                <a class="navrightitem rightmargin" id="navcheck" href="#">繳費登記與查詢<i class="large material-icons navbottonsearch rightmargin">search</i></a>
             </div>
         </div>
     </nav>
-    <!-- 首頁 -->
-    <div class="">
-        <section data-scroll-index="0" id="landing" class="section1-content">
-            <h1>霍格華茲</h1>
+
+    <div>
+        <!-- 首頁 -->
+        <section data-scroll-index="0" id="landing" class="">
+            <content>
+                <h1 class="container section1-content">霍格華資</h1>
+            </content>
+            <div class="contentcenter">
+                <button data-scroll-goto="1" class="dropdownContainer circle z-depth-1" type="button">
+                    <i class="material-icons dropdown"><b>arrow_downward</b></i>
+                </button>
+
+            </div>
         </section>
+
         <!-- 關於 -->
-        <section id="aftermain">
-            <div data-scroll-index="1" id="about">
+        <div id="aftermain">
+            <section data-scroll-index="1" id="about">
+                <!-- 關於三資 -->
+                <h4 class="container maintitle">關於三資迎新</h4>
+                <div id="aboutcamp" class="container">
 
-            </div>
+                    <div class="card aboutcard">
+                        <div class="card-contents">
+                            <!-- <span class="card-title">關於三資迎新</span> -->
+                            <p class="" style="padding: 40px">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 歷年粉專 -->
+                <content>
+                    <h5 class="container secondarytitle">歷年粉專</h5>
+                    <div id="firstrow" class="container historyfans flex">
+                        <div id="camp2011" class="card small z-depth-1 cardsize">
+                            <!-- Card Content -->
+                        </div>
+                        <div id="camp2012" class="card small z-depth-1 cardsize">
+                            <!-- Card Content -->
+                        </div>
+                        <div id="camp2013" class="card small z-depth-1 cardsize">
+                            <!-- Card Content -->
+                        </div>
+                    </div>
+
+                    <div id="thirdrow" class="container historyfans flex">
+                        <div id="camp2014" class="card small z-depth-1 cardsize">
+                            <!-- Card Content -->
+                        </div>
+                        <div id="camp2015" class="card small z-depth-1 cardsize">
+                            <!-- Card Content -->
+                        </div>
+                        <div id="camp2016" class="card small z-depth-1 cardsize">
+                            <!-- Card Content -->
+                        </div>
+                    </div>
+                </content>
+            </section>
             <!-- 日程表 -->
-            <div data-scroll-index="2" id="schedule">
+            <section data-scroll-index="2" id="schedule">
+                <h3 class="container maintitle">活動</h3>
 
-            </div>
+            </section>
             <!-- 注意事項 -->
-            <div data-scroll-index="3" id="notice">
-
-            </div>
+            <section data-scroll-index="3" id="notice">
+                <h3 class="container maintitle">營期注意事項</h3>
+                <div class="container">
+                    <div id="noticecard" class="card-panel teal">
+                        <p class="white-text">
+                            I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                        </p>
+                    </div>
+                </div>
+            </section>
             <!-- 報名 -->
-            <div id="signup">
-            </div>
-        </section>
+            <section data-scroll-index="4" id="signup">
+                <div class="container contentcenter">
+                    <button id="signupButton" type="button" herf="#" class=""></button>
+                </div>
+
+            </section>
+        </div>
     </div>
     <!-- script -->
     <script src="assets/js/scrollIt.min.js"></script>

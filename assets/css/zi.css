@@ -1,9 +1,9 @@
 #aftermain {
     background: #1a8af3;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient( top, #1a8af3, rgba(0, 28, 49, 1));
+    background: -webkit-linear-gradient( top, #1a8af3, rgba(0, 28, 49, 0.95), rgba(0, 28, 49, 1));
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient( top, #1a8af3, rgba(0, 28, 49, 1));
+    background: linear-gradient( top, #1a8af3, rgba(0, 28, 49, 0.95), rgba(0, 28, 49, 1));
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -15,6 +15,7 @@
     padding: 0;
     position: fixed;
     height: 90px;
+    z-index: 99;
     background-color: rgba(255, 255, 255, 0.95);
 }
 .leftmargin {
@@ -23,12 +24,35 @@
 .rightmargin {
     float: right;
 }
-//透明
-.transparent {
-    filter: alpha(opacity=80);
-    -moz-opacity: 0.8;
-    opacity: 0.8;
+.maintitle {
+    color: rgba(255, 255, 255, 1);
+    padding-top: 110px;
+    padding-bottom: 50px;
 }
+.secondarytitle {
+    color: rgba(255, 255, 255, 1);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*透明*/
+
+.transparent {
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+}
+.contentcenter {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+/*------------------------------------------*/
+
 
 /* nav */
 
@@ -36,13 +60,14 @@
     display: block;
     height: 90px;
     padding-top: 5px;
-    padding-right: 20px;
+    padding-right: 22px;
     line-height: 90px;
     color: #bbc3cf;
+    cursor: pointer;
 }
 .navrightitem {
     display: block;
-    background-color: #0b76da;
+    background-color: rgba(26, 138, 243, 1);
     color: rgba(255, 255, 255, 0.9);
     padding-left: 10px;
     width: 190px;
@@ -62,8 +87,11 @@
 }
 #navsignup {
     padding-left: 0px;
-    width: 150px;
+    width: 135px;
 }
+
+/*------------------------------------------*/
+
 
 /* landing */
 
@@ -82,26 +110,85 @@
     width: 100vw;
 }
 
+/*畫圓*/
+
+.circle {
+    /*正圓形，所以寬與高都設一樣*/
+    width: 60px;
+    height: 60px;
+    /*四邊的圓角*/
+    border-radius: 99em;
+    background-color: rgba(255, 255, 255, 1);
+    border: initial;
+}
+.dropdownContainer {
+    float: left;
+    transform: translateY(-50%);
+}
+.dropdown {
+    font-size: 18px;
+    color: rgba(34, 43, 51, 0.8);
+}
+
+/*------------------------------------------*/
+
+
 /* about */
 
 #about {
-    height: 120vh;
+    height: auto;
 }
+#aboutcamp {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.aboutcard {
+    background-color: rgba(255, 255, 255, 1);
+    height: 350px;
+    width: auto;
+}
+#firstrow {
+    padding-top: 5px;
+}
+.historyfans {
+    display: inline-block;
+    display: -webkit-flex;
+    display: flex;
+}
+.flex {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.cardsize {
+    width: 325px;
+    height: 100px;
+}
+
+/*------------------------------------------*/
+
 
 /* schedule */
 
 #schedule {
-    height: 120vh;
+    height: 80vh;
 }
 
 /* notice */
 
 #notice {
-    height: 120vh;
+    height: auto;
+}
+#noticecard {
+    height: 500px;
 }
 
 /* signup */
 
 #signup {
-    height: 80vh;
+    height: 50vh;
+}
+#signupButton {
+    margin-top: 15%;
+    height: 80px;
+    width: 250px;
 }
