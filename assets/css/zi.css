@@ -9,15 +9,6 @@
 
 /* main */
 
-.mainnav {
-    display: block;
-    margin-top: 0;
-    padding: 0;
-    position: fixed;
-    height: 90px;
-    z-index: 99;
-    background-color: rgba(255, 255, 255, 0.95);
-}
 .leftmargin {
     float: left;
 }
@@ -56,6 +47,15 @@
 
 /* nav */
 
+.mainnav {
+    display: inline-block;
+    margin-top: 0;
+    position: fixed;
+    height: 90px;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0.95);
+    opacity: 0.95;
+}
 .navitem {
     display: block;
     height: 90px;
@@ -89,6 +89,10 @@
     padding-left: 0px;
     width: 135px;
 }
+.cardcontentalign {
+    padding-left: 52px;
+    padding-right: 52px;
+}
 
 /*------------------------------------------*/
 
@@ -100,14 +104,9 @@
     height: 90vh;
 }
 .section1-content {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+    display: inline;
     height: 90vh;
-    width: 100vw;
+    padding-top: 100px;
 }
 
 /*畫圓*/
@@ -121,9 +120,10 @@
     background-color: rgba(255, 255, 255, 1);
     border: initial;
 }
-.dropdownContainer {
+.dropdownContent {
     float: left;
     transform: translateY(-50%);
+    cursor: progress;
 }
 .dropdown {
     font-size: 18px;
@@ -146,6 +146,7 @@
     background-color: rgba(255, 255, 255, 1);
     height: 350px;
     width: auto;
+    border-left: 6px solid #1a8af3;
 }
 #firstrow {
     padding-top: 5px;
@@ -163,6 +164,9 @@
     width: 325px;
     height: 100px;
 }
+.cardborder {
+    border-bottom: 6px solid #1a8af3;
+}
 
 /*------------------------------------------*/
 
@@ -179,7 +183,8 @@
     height: auto;
 }
 #noticecard {
-    height: 500px;
+    height: 450px;
+    border-left: 6px solid #1a8af3;
 }
 
 /* signup */
@@ -191,4 +196,17 @@
     margin-top: 15%;
     height: 80px;
     width: 250px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: #1a8af3;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1);
+}
+#signupContent {
+    height: 100px;
+    margin-top: 100px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-left: 6px solid #1a8af3;
+}
+
 }

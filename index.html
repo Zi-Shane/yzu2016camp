@@ -38,9 +38,12 @@
     <link rel="stylesheet" href="assets/css/zi.css">
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/js/zi.js"></script>
     <script>
         $(function() {
-            $.scrollIt();
+            $.scrollIt({
+                topOffset: -90
+            });
         });
     </script>
     <!--[if lt IE 9]>
@@ -50,7 +53,7 @@
 
 <body>
     <!-- navigation -->
-    <nav class="mainnav z-depth-0 transparent">
+    <nav class="mainnav z-depth-0">
         <div class="container">
             <div>
                 <a data-scroll-nav="0" class="navitem leftmargin">首頁</a>
@@ -65,18 +68,38 @@
             </div>
         </div>
     </nav>
-
     <div>
-        <!-- 首頁 -->
-        <section data-scroll-index="0" id="landing" class="">
-            <content>
-                <h1 class="container section1-content">霍格華資</h1>
-            </content>
-            <div class="contentcenter">
-                <button data-scroll-goto="1" class="dropdownContainer circle z-depth-1" type="button">
-                    <i class="material-icons dropdown"><b>arrow_downward</b></i>
-                </button>
 
+        <!-- 首頁 -->
+        <section data-scroll-index="0" id="landing">
+            <div class="container">
+                <div class="section1-content">
+                    <!-- leftside-Content -->
+                    <div class="leftmargin">
+                        <div style="position:absolute; top:100px;">
+                            <h1>霍格華資</h1>
+                            <p>元智大學2016三資迎新</p>
+                        </div>
+                        <!-- dropdown-Button -->
+                        <div style="position:absolute; top: 90vh;">
+                            <a data-scroll-goto="1" class="dropdownContent circle contentcenter z-depth-1">
+                                <i class="material-icons dropdown"><b>arrow_downward</b></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- rightside-Content -->
+                    <div class="rightmargin">
+                        <div style="position:relative; top:95px;left:200px; font-size:20px;">
+                            <span><b>10</b></span>
+                            <span><b>11</b></span>
+                            <span><b>12</b></span>
+                            <span><b>13</b></span>
+                        </div>
+                        <div class="">
+                            <img src="assets/img/member-square.png" alt="" style="width:520px; height:520px; position:relative; top:18vh;" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -90,64 +113,67 @@
                     <div class="card aboutcard">
                         <div class="card-contents">
                             <!-- <span class="card-title">關於三資迎新</span> -->
-                            <p class="" style="padding: 40px">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                            <p class="cardcontentalign" style="padding-top: 50px;">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
                         </div>
                     </div>
-
                 </div>
                 <!-- 歷年粉專 -->
+
                 <content>
                     <h5 class="container secondarytitle">歷年粉專</h5>
                     <div id="firstrow" class="container historyfans flex">
-                        <div id="camp2011" class="card small z-depth-1 cardsize">
+                        <div id="camp2011" class="card small z-depth-1 cardsize cardborder">
                             <!-- Card Content -->
                         </div>
-                        <div id="camp2012" class="card small z-depth-1 cardsize">
+                        <div id="camp2012" class="card small z-depth-1 cardsize cardborder">
                             <!-- Card Content -->
                         </div>
-                        <div id="camp2013" class="card small z-depth-1 cardsize">
+                        <div id="camp2013" class="card small z-depth-1 cardsize cardborder">
                             <!-- Card Content -->
                         </div>
                     </div>
 
                     <div id="thirdrow" class="container historyfans flex">
-                        <div id="camp2014" class="card small z-depth-1 cardsize">
+                        <div id="camp2014" class="card small z-depth-1 cardsize cardborder">
                             <!-- Card Content -->
                         </div>
-                        <div id="camp2015" class="card small z-depth-1 cardsize">
+                        <div id="camp2015" class="card small z-depth-1 cardsize cardborder">
                             <!-- Card Content -->
                         </div>
-                        <div id="camp2016" class="card small z-depth-1 cardsize">
+                        <div id="camp2016" class="card small z-depth-1 cardsize cardborder">
                             <!-- Card Content -->
                         </div>
                     </div>
                 </content>
             </section>
+
             <!-- 日程表 -->
             <section data-scroll-index="2" id="schedule">
                 <h3 class="container maintitle">活動</h3>
-
             </section>
+
             <!-- 注意事項 -->
             <section data-scroll-index="3" id="notice">
                 <h3 class="container maintitle">營期注意事項</h3>
                 <div class="container">
-                    <div id="noticecard" class="card-panel teal">
-                        <p class="white-text">
+                    <div id="noticecard" class="card-panel cardcontentalign" style="padding-top: 50px;">
+                        <p class="">
                             I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
                         </p>
                     </div>
                 </div>
             </section>
+
             <!-- 報名 -->
             <section data-scroll-index="4" id="signup">
                 <div class="container contentcenter">
-                    <button id="signupButton" type="button" herf="#" class=""></button>
+                    <a id="signupButton" herf="#" class="btn-flat contentcenter" style="background-color: rgba(0, 28, 49, 0.95)">我要報名</a>
                 </div>
-
             </section>
         </div>
     </div>
+
     <!-- script -->
     <script src="assets/js/scrollIt.min.js"></script>
+
 </body>
